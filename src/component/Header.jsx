@@ -1,7 +1,9 @@
+import Mobile from "../Navbar/Mobile";
+
 const Header = () => {
     return ( 
-        <div>
-            
+        <div className="bg-black py-5 px-7">
+            <Mobile/>
         </div>
      );
 }
