@@ -5,4 +5,4 @@ const App = () => {
 }
  
 export default App;
-<div><h1>Welcome</h1></div
+<div><h1>Welcome</h1></div>
