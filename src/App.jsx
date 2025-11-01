@@ -1,4 +1,4 @@
-import Header from "./component/Header";
+import Header from "./Navbar/Header";
 import Homepage from "./pages/Homepage/Homepage";
 
 const App = () => {
