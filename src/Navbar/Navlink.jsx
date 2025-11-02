@@ -1,5 +1,5 @@
 const NavbarLink = [
-  { label: "Home", href: "/" },
+  { label: "HOME", href: "/" },
   { label: "HEADPHONES", href: "/headphones" },
   { label: "SPEAKERS", href: "/speakers" },
   { label: "EARPHONES", href: "/earphones" },
