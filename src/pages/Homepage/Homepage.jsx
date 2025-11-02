@@ -1,5 +1,6 @@
 import Hero from "./Hero";
 import HeadphoneShop from "./HeadphoneShop";
+import SpeakerProduct from "./SpeakerProduct";
 
 
 const Homepage = () => {
@@ -7,6 +8,7 @@ const Homepage = () => {
         <div>
             <Hero/>
             <HeadphoneShop/>
+            <SpeakerProduct/>
         </div>
       );
 }
