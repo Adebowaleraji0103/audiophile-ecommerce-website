@@ -8,10 +8,8 @@ const Desktop = () => {
       <ul>
         {NavbarLink.map((link, index) => (
           <ul key={link}>
-            <li>
-              {link.href}
-              {link.label}
-            </li>
+            <li>{link.label}</li>
+            <li>{link.href}</li>
           </ul>
         ))}
       </ul>
