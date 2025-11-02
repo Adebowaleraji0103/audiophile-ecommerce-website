@@ -1,9 +1,12 @@
 import Hero from "./Hero";
+import HeadphoneShop from "./HeadphoneShop";
+
 
 const Homepage = () => {
     return (
         <div>
             <Hero/>
+            <HeadphoneShop/>
         </div>
       );
 }
