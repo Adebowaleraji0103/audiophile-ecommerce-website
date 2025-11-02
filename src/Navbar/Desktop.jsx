@@ -7,10 +7,9 @@ const Desktop = () => {
 
       <ul>
         {NavbarLink.map((link, index) => (
-          <ul key={link}>
-            <li>{link.label}</li>
-            <li>{link.href}</li>
-          </ul>
+          <li key={index}>
+            <a href={link.href}>{link.label}</a>
+          </li>
         ))}
       </ul>
       <img src="/assets/carts.svg" alt="cart" />
