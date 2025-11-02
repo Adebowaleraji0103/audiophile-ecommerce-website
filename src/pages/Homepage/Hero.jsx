@@ -4,7 +4,7 @@ const Hero = () => {
       {/* Background image */}
       <div
         className="
-        w-full h-[550px]  
+        w-full h-[620px]  
         bg-[url('/assets/home/mobile/image-header.jpg')]
         sm:bg-[url('/assets/home/tablet/image-header.jpg')]
         lg:bg-[url('/assets/home/desktop/image-hero.jpg')]
