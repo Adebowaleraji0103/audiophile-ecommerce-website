@@ -93,7 +93,7 @@ const SpeakerProduct = () => {
           <h1 className="text-[26px] font-semibold md:text-[28px] lg:text-[32px]">
             YX1 EARPHONES
           </h1>
-          <button className="border px-3 py-2 text-[13px] md:text-[16px]">
+          <button className="border px-3 py-2 text-[13px] md:text-[16px">
             SEE PRODUCT
           </button>
         </div>
