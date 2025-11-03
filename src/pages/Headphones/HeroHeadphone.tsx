@@ -1,3 +1,6 @@
+import AudioGear from "../Homepage/AudioGear";
+import HeadphoneShop from "../Homepage/HeadphoneShop";
+
 const card = [
   {
     imageMobile: "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
@@ -33,39 +36,46 @@ const card = [
 
 const HeroHeadphone = () => {
   return (
-    <main className="mb-10000 flex-flex-col gap-[1rem]">
-      <h1 className="bg-black text-white text-[24px] font-semibold text-center py-6 mb-[2rem]">
-        HEADPHONES
-      </h1>
-      <div className="px-[1.4rem] flex flex-col gap-[2rem]">
-        {card.map((card, index) => (
-          <div key={index} className="flex flex-col gap-[2.4rem]">
-            <img
-              src={card.imageMobile}
-              alt="imageMobile"
-              className="hidden md:flex lg:hidden"
-            />
-            <img
-              src={card.imageTablet}
-              alt="imageTablet"
-              className="flex md:hidden lg:hidden"
-            />
-            <img
-              src={card.imageDesktop}
-              alt="imageDesktop"
-              className="hidden lg:flex"
-            />
-            <div className="flex flex-col gap-[1rem] justify-center items-center text-center px-4">
-              <p className="text-[#D87D4A]">{card.label}</p>
-              <h2 className="text-[28px] font-semibold">{card.name}</h2>
-              <p className="opacity-50">{card.description}</p>
-              <button className="bg-[#D87D4A] px-4 py-2 text-white">
-                {card.button}
-              </button>
+    <main className="flex flex-col gap-[3rem]">
+      <div>
+        <h1 className="bg-black text-white text-[24px] font-semibold text-center py-6 mb-[2rem]">
+          HEADPHONES
+        </h1>
+        <div className="px-[1.4rem] flex flex-col gap-[2rem] lg:gap-[4rem] ">
+          {card.map((card, index) => (
+            <div
+              key={index}
+              className="flex flex-col gap-[2.4rem] lg:flex-row lg:justify-between lg:gap-[3rem] lg:px-[4rem]"
+            >
+              <img
+                src={card.imageMobile}
+                alt="imageMobile"
+                className="hidden md:flex lg:hidden rounded-xl"
+              />
+              <img
+                src={card.imageTablet}
+                alt="imageTablet"
+                className="flex md:hidden rounded-xl"
+              />
+              <img
+                src={card.imageDesktop}
+                alt="imageDesktop"
+                className="hidden lg:flex h-[450px] rounded-xl"
+              />
+              <div className="flex flex-col gap-[1rem] justify-center items-center text-center px-4 lg:text-start  lg:items-start lg:w-[700px] ">
+                <p className="text-[#D87D4A]">{card.label}</p>
+                <h2 className="text-[28px] font-semibold">{card.name}</h2>
+                <p className="opacity-50">{card.description}</p>
+                <button className="bg-[#D87D4A] px-4 py-2 text-white">
+                  {card.button}
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+      <HeadphoneShop />
+      <AudioGear/>
     </main>
   );
 };
