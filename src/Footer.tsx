@@ -1,8 +1,12 @@
+import NavbarLink from "./Navbar/Navlink";
+
 const Footer = () => {
     return (  
-        <div>
-
-        </div>
+        <footer>
+            <div>
+                {/* <NavbarLink/> */}
+            </div>
+        </footer>
     );
 }
  
