@@ -13,11 +13,11 @@ const card = [
     button: "SEE PRODUCT",
   },
   {
-    imageMobile: "/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-    imageTablet: "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-    imageDesktop: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+    imageMobile: "/assets/shared/mobile/image-zx7-speaker.jpg",
+    imageTablet: "/assets/shared/tablet/image-zx7-speaker.jpg",
+    imageDesktop: "/assets/shared/desktop/image-zx7-speaker.jpg",
     // label: "NEW PRODUCT",
-    name: "XX99 MARK I HEADPHONES",
+    name: "ZX7 SPEAKER",
     description:
       "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
     button: "SEE PRODUCT",
@@ -31,6 +31,39 @@ const Speaker = () => {
         <h1 className="bg-black text-white text-[24px] font-semibold text-center py-6 mb-[2rem]">
           SPEAKERS
         </h1>
+        <div className="px-[1.4rem] flex flex-col gap-[3rem] lg:gap-[4rem] ">
+          {card.map((card, index) => (
+            <div
+              key={index}
+              className="flex flex-col gap-[1.4rem] lg:flex-row lg:justify-between lg:gap-[3rem] lg:px-[4rem]
+              "
+            >
+              <img
+                src={card.imageMobile}
+                alt="imageMobile"
+                className="hidden md:flex lg:hidden rounded-xl"
+              />
+              <img
+                src={card.imageTablet}
+                alt="imageTablet"
+                className="flex md:hidden rounded-xl"
+              />
+              <img
+                src={card.imageDesktop}
+                alt="imageDesktop"
+                className="hidden lg:flex h-[450px] rounded-xl"
+              />
+              <div className="flex flex-col gap-[1rem] justify-center items-center text-center px-4 lg:text-start  lg:items-start lg:w-[700px] ">
+                <p className="text-[#D87D4A]">{card.label}</p>
+                <h2 className="text-[28px] font-semibold">{card.name}</h2>
+                <p className="opacity-50">{card.description}</p>
+                <button className="bg-[#D87D4A] px-4 py-2 text-white">
+                  {card.button}
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
       <HeadphoneShop />
       <AudioGear />
