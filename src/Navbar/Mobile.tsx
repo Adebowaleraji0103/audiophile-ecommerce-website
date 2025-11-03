@@ -19,7 +19,7 @@ const Mobile = () => {
         {isOpen && (
           <ul className="bg-black font-semibold flex flex-col gap-[2rem] w-full h-screen px-5 py-[2rem] absolute top-11 left-0 z-40 lg:hidden">
             {NavbarLink.map((link, index) => (
-              <li key={index}>
+              <li key={index} onClick={() => setIsOpen(false)}>
                 {/* <a href={link.href}>{link.label}</a> */}
                 <Link to={link.href}>{link.label}</Link>
               </li>
