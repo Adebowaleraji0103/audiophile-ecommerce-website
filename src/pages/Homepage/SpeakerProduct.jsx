@@ -80,7 +80,7 @@ const SpeakerProduct = () => {
           <img
             src="\assets\home\tablet\image-earphones-yx1.jpg"
             alt=""
-            className="rounded-xl hidden md:flex lg:hidden"
+            className="rounded-xl hidden md:flex lg:hidden md:w-full "
           />
           {/* ----- desktop image ----- */}
           <img
@@ -89,7 +89,7 @@ const SpeakerProduct = () => {
             className="rounded-xl hidden lg:flex"
           />
         </div>
-        <div className="rounded-xl flex flex-col gap-[1.5rem] text-center items-center justify-center bg-[#F1F1F1] h-[200px] md:h-[320px] lg:w-[540px]">
+        <div className="rounded-xl flex flex-col gap-[1.5rem] text-center items-center justify-center bg-[#F1F1F1] h-[200px] md:h-[333px] md:w-full lg:w-[540px] lg:h-[295px]">
           <h1 className="text-[26px] font-semibold md:text-[28px] lg:text-[32px]">
             YX1 EARPHONES
           </h1>
