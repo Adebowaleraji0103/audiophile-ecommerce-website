@@ -18,12 +18,11 @@ const cardDetails = [
 
 const HeadphoneShop = () => {
   return (
-    <div>
       <div className="mb-20 px-10 flex flex-col gap-16 pt-12 items-center md:flex-row md:justify-center md:gap-10">
         {cardDetails.map((card, index) => (
           <div
             key={index}
-            className="relative bg-[#f1f1f1] w-[300px] h-[160px] rounded-lg flex flex-col items-center justify-end pb-6 hover:scale-105 transition-transform"
+            className="relative bg-[#f1f1f1] w-[320px] h-[160px] rounded-lg flex flex-col items-center justify-end pb-6 hover:scale-105 transition-transform"
           >
             {/* Floating image */}
             <img
@@ -45,7 +44,6 @@ const HeadphoneShop = () => {
           </div>
         ))}
       </div>
-    </div>
   );
 };
 
