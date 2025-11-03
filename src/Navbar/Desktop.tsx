@@ -1,4 +1,5 @@
 import NavbarLink from "./Navlink";
+import { Link } from "react-router-dom";
 
 const Desktop = () => {
   return (
@@ -9,7 +10,8 @@ const Desktop = () => {
         <ul className="flex gap-15">
           {NavbarLink.map((link, index) => (
             <li key={index}>
-              <a href={link.href}>{link.label}</a>
+              {/* <a href={link.href}>{link.label}</a> */}
+              <Link to={link.href}>{link.label}</Link>
             </li>
           ))}
         </ul>
