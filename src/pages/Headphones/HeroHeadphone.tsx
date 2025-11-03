@@ -15,7 +15,21 @@ const HeroHeadphone = () => {
   return (
     <main>
       <h1>HEADPHONES</h1>
-      <div></div>
+      <div>
+        {card.map((card, index) => (
+          <div key={index}>
+            <img src={card.imageMobile} alt="imageMobile" className="md:hidden"/>
+            <img src={card.imageTablet} alt="imageTablet" className="hidden md:flex lg:hidden"/>
+            <img src={card.imageDesktop} alt="imageDesktop" className="hidden lg:flex"/>
+            <div>
+              <p>{card.label}</p>
+              <h2>{card.name}</h2>
+                <p>{card.description}</p>
+                <button>{card.button}</button>
+            </div>
+          </div>
+        ))}
+      </div>
     </main>
   );
 };

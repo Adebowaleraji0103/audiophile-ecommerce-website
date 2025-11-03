@@ -1,9 +1,11 @@
-const Headphones = () => {
-    return ( 
-        <div className="bg-amber-400 h-[10rem]"> 
+import HeroHeadphone from "./HeroHeadphone";
 
-        </div>
-     );
-}
- 
+const Headphones = () => {
+  return (
+    <div className="">
+      <HeroHeadphone />
+    </div>
+  );
+};
+
 export default Headphones;
