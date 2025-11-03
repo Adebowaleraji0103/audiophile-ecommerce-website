@@ -9,16 +9,16 @@ import EarphoneHomepage from "./pages/Earphones/EarphoneHomepage";
 const App = () => {
   return (
     <div>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/headphones" element={<Headphones />} />
           <Route path="/speakers" element={<SpeakerHomepage />} />
           <Route path="/earphones" element={<EarphoneHomepage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 };
