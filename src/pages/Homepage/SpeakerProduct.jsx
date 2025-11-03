@@ -1,6 +1,6 @@
 const SpeakerProduct = () => {
   return (
-    <div className="mb-20 px-8 flex flex-col gap-[3rem] lg:px-[11rem]">
+    <div className="mb-20 px-8 flex flex-col gap-[3rem] lg:px-[8rem]">
       <div className="bg-[#D87D4A] flex flex-col gap-7 items-center justify-center text-white py-[2rem] px-10 rounded-xl lg:justify-between lg:pt-[6rem] lg:px-[10rem] lg:flex-row lg:relative ">
         <div>
           {/* -----Mobile Image---- */}

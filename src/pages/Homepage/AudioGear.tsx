@@ -1,6 +1,6 @@
 const AudioGear = () => {
     return (
-      <div className="mb-1200 flex flex-col gap-[1.3rem] px-8 lg:px-[11rem] lg:flex-row-reverse lg:items-center lg:gap-[5rem]">
+      <div className="mb-20 flex flex-col gap-[1rem] px-8 lg:px-[8rem] lg:flex-row-reverse lg:items-center lg:gap-[5rem]">
         <div>
           <img
             src="\assets\shared\mobile\image-best-gear.jpg"
