@@ -18,6 +18,8 @@ const App = () => {
           <Route path="/speakers" element={<SpeakerHomepage />} />
           <Route path="/earphones" element={<EarphoneHomepage />} />
           <Route path="/product/:id" element={<ProductDetails />} />
+          {/* <Route path="/product/:id" element={<Product />} /> */}
+
         </Routes>
         <Footer />
       </BrowserRouter>
