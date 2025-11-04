@@ -66,6 +66,10 @@ import products from "../../Data/product";
 // ];
 
 const HeroHeadphone = () => {
+  // only show headphone products
+  const headphone = products.filter(
+    (product) => product.category === "headphones"
+  );
   return (
     <main className="flex flex-col gap-[3rem]">
       <div>
@@ -73,7 +77,7 @@ const HeroHeadphone = () => {
           HEADPHONES
         </h1>
         <div className="px-[1.4rem] flex flex-col gap-[2rem] lg:gap-[4rem] ">
-          {products.map((product, index) => (
+          {headphone.map((product, index) => (
             <div
               key={index}
               className="flex flex-col gap-[2.4rem] lg:flex-row lg:justify-between lg:gap-[3rem] lg:px-[4rem]"

@@ -5,6 +5,7 @@ const products = [
     imageDesktop: "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
     label: "NEW PRODUCT",
     name: "XX99 MARK II HEADPHONES",
+    category: "headphones",
     description:
       "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
     id: "xx99-mark-two",
@@ -28,6 +29,7 @@ const products = [
     imageTablet: "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
     imageDesktop: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
     name: "XX99 MARK I HEADPHONES",
+    category: "headphones",
     description:
       "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
     id: "xx99-mark-one",
@@ -50,6 +52,7 @@ const products = [
     imageDesktop: "/assets/shared/desktop/image-xx59-headphones.jpg",
     // label: "NEW PRODUCT",
     name: "XX59 MARK II HEADPHONES",
+    category: "headphones",
     description:
       "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
     id: "xx99-mark-three",
@@ -73,6 +76,7 @@ const products = [
     imageDesktop: "/assets/shared/desktop/image-zx9-speaker.jpg",
     label: "NEW PRODUCT",
     name: "ZX9 SPEAKER",
+    category: "speakers",
     description:
       "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
     id: "zx9-speaker",
@@ -97,6 +101,7 @@ const products = [
     imageDesktop: "/assets/shared/desktop/image-zx7-speaker.jpg",
     // label: "NEW PRODUCT",
     name: "ZX7 SPEAKER",
+    category: "speakers",
     description:
       "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
     id: "zx7-speaker",
