@@ -62,7 +62,6 @@ const Speaker = () => {
                 <p className="opacity-50">{product.description}</p>
                 <Link to={`/product/${product.id}`}>
                   <button className="bg-[#D87D4A] px-4 py-2 text-white">
-                    {" "}
                     SEE PRODUCT
                   </button>
                 </Link>

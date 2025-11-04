@@ -1,4 +1,5 @@
 const products = [
+    // --------- Headphones ----------
   {
     imageMobile: "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
     imageTablet: "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
@@ -69,6 +70,7 @@ const products = [
     ],
     button: "SEE PRODUCT",
   },
+//   -------- Speaker ------------
 
   {
     imageMobile: "/assets/shared/mobile/image-zx9-speaker.jpg",
@@ -117,6 +119,17 @@ const products = [
       { quantity: 1, item: "3.5mm 7.5m Audio Cable" },
       { quantity: 1, item: "7.5m Optical Cable" },
     ],
+    button: "SEE PRODUCT",
+  },
+// ------------ Earohone ---------------
+  {
+    imageMobile: "/assets/product-yx1-earphones/mobile/image-product.jpg",
+    imageTablet: "/assets/product-yx1-earphones/tablet/image-product.jpg",
+    imageDesktop: "/assets/product-yx1-earphones/desktop/image-product.jpg",
+    label: "NEW PRODUCT",
+    name: "YX1 WIRELESS EARPHONES",
+    description:
+      "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setupsTailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
     button: "SEE PRODUCT",
   },
 ];
