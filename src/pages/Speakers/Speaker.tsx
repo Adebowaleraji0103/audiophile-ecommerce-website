@@ -26,6 +26,8 @@ import products from "../../Data/product";
 // ];
 
 const Speaker = () => {
+  const speakersfilter = products.filter((product => product.category === "speakers"));
+
   return (
     <main className="flex flex-col gap-[3rem]">
       <div>
@@ -33,7 +35,7 @@ const Speaker = () => {
           SPEAKERS
         </h1>
         <div className="px-[1.4rem] flex flex-col gap-[3rem] lg:gap-[4rem] ">
-          {products.map((product, index) => (
+          {speakersfilter.map((product, index) => (
             <div
               key={index}
               className="flex flex-col gap-[1.4rem] lg:flex-row lg:justify-between lg:gap-[3rem] lg:px-[4rem]
