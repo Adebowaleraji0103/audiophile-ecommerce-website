@@ -6,6 +6,7 @@ const card = [
     imageMobile: "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
     imageTablet: "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
     imageDesktop: "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
+    id: "xx99-mark-two",
     label: "NEW PRODUCT",
     name: "XX99 MARK II HEADPHONES",
     description:
@@ -16,6 +17,7 @@ const card = [
     imageMobile: "/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
     imageTablet: "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
     imageDesktop: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
+    id: "xx99-mark-one",
     // label: "NEW PRODUCT",
     name: "XX99 MARK I HEADPHONES",
     description:
@@ -26,8 +28,9 @@ const card = [
     imageMobile: "/assets/shared/mobile/image-xx59-headphones.jpg",
     imageTablet: "/assets/shared/tablet/image-xx59-headphones.jpg",
     imageDesktop: "/assets/shared/desktop/image-xx59-headphones.jpg",
+    id: "xx99-mark-three",
     // label: "NEW PRODUCT",
-    name: "XX99 MARK II HEADPHONES",
+    name: "XX59 MARK II HEADPHONES",
     description:
       "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
     button: "SEE PRODUCT",
