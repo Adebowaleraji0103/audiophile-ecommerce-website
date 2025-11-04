@@ -1,16 +1,26 @@
 import AudioGear from "../Homepage/AudioGear";
 import HeadphoneShop from "../Homepage/HeadphoneShop";
+import { Link } from "react-router-dom";
 
 const card = [
   {
     imageMobile: "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
     imageTablet: "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
     imageDesktop: "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
-    id: "xx99-mark-two",
     label: "NEW PRODUCT",
     name: "XX99 MARK II HEADPHONES",
     description:
-      "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
+    "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
+    id: "xx99-mark-two",
+    price: 2999,
+    features: `Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for ease of use and a stylish aluminum frame.`,
+    includes: [
+      { quantity: 1, item: "Headphone Unit" },
+      { quantity: 2, item: "Replacement Earcups" },
+      { quantity: 1, item: "User Manual" },
+      { quantity: 1, item: "3.5mm 5m Audio Cable" },
+      { quantity: 1, item: "Travel Bag" },
+    ],
     button: "SEE PRODUCT",
   },
   {
@@ -69,16 +79,18 @@ const HeroHeadphone = () => {
                 <p className="text-[#D87D4A]">{card.label}</p>
                 <h2 className="text-[28px] font-semibold">{card.name}</h2>
                 <p className="opacity-50">{card.description}</p>
-                <button className="bg-[#D87D4A] px-4 py-2 text-white">
-                  {card.button}
-                </button>
+                <Link to={`/product/${card.id}`}>
+                  <button className="bg-[#D87D4A] px-4 py-2 text-white">
+                    {card.button}
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
         </div>
       </div>
       <HeadphoneShop />
-      <AudioGear/>
+      <AudioGear />
     </main>
   );
 };
