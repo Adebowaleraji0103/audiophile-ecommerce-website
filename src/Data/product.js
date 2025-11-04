@@ -128,6 +128,7 @@ const products = [
     imageDesktop: "/assets/product-yx1-earphones/desktop/image-product.jpg",
     label: "NEW PRODUCT",
     name: "YX1 WIRELESS EARPHONES",
+    category: "earphones",
     description:
       "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setupsTailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
     id: "yx1-wireless-earphone",

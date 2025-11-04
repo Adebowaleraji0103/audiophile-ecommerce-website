@@ -1,20 +1,23 @@
 import AudioGear from "../Homepage/AudioGear";
 import HeadphoneShop from "../Homepage/HeadphoneShop";
+import products from "../../Data/product";
+import { Link } from "react-router-dom";
 
-const card = [
-  {
-    imageMobile: "/assets/product-yx1-earphones/mobile/image-product.jpg",
-    imageTablet: "/assets/product-yx1-earphones/tablet/image-product.jpg",
-    imageDesktop: "/assets/product-yx1-earphones/desktop/image-product.jpg",
-    label: "NEW PRODUCT",
-    name: "YX1 WIRELESS EARPHONES",
-    description:
-      "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setupsTailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
-    button: "SEE PRODUCT",
-  },
-];
+// const card = [
+//   {
+//     imageMobile: "/assets/product-yx1-earphones/mobile/image-product.jpg",
+//     imageTablet: "/assets/product-yx1-earphones/tablet/image-product.jpg",
+//     imageDesktop: "/assets/product-yx1-earphones/desktop/image-product.jpg",
+//     label: "NEW PRODUCT",
+//     name: "YX1 WIRELESS EARPHONES",
+//     description:
+//       "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setupsTailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
+//     button: "SEE PRODUCT",
+//   },
+// ];
 
 const Speaker = () => {
+  const productsfilter = products.filter( (product) => product.category === "earphones" );
   return (
     <main className="flex flex-col gap-[3rem]">
       <div>
@@ -22,7 +25,7 @@ const Speaker = () => {
           EARPHONES
         </h1>
         <div className="px-[1.4rem] flex flex-col gap-[3rem] lg:gap-[4rem] ">
-          {card.map((card, index) => (
+          {productsfilter.map((card, index) => (
             <div
               key={index}
               className="flex flex-col gap-[1.4rem] lg:flex-row lg:justify-between lg:gap-[3rem] lg:px-[4rem]
@@ -47,9 +50,11 @@ const Speaker = () => {
                 <p className="text-[#D87D4A]">{card.label}</p>
                 <h2 className="text-[28px] font-semibold">{card.name}</h2>
                 <p className="opacity-50">{card.description}</p>
-                <button className="bg-[#D87D4A] px-4 py-2 text-white">
-                  {card.button}
-                </button>
+                <Link to={`/product/${card.id}`}>
+                  <button className="bg-[#D87D4A] px-4 py-2 text-white">
+                    {card.button}
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -62,3 +67,4 @@ const Speaker = () => {
 };
 
 export default Speaker;
+                // <Link to={`/product/${product.id}`}>
