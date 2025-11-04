@@ -1,7 +1,7 @@
 import AudioGear from "../Homepage/AudioGear";
 import HeadphoneShop from "../Homepage/HeadphoneShop";
 import products from "../../Data/product";
-
+import { Link } from "react-router-dom";
 // const card = [
 //   {
 //     imageMobile: "/assets/shared/mobile/image-zx9-speaker.jpg",
@@ -60,9 +60,12 @@ const Speaker = () => {
                 <p className="text-[#D87D4A]">{product.label}</p>
                 <h2 className="text-[28px] font-semibold">{product.name}</h2>
                 <p className="opacity-50">{product.description}</p>
-                <button className="bg-[#D87D4A] px-4 py-2 text-white">
-                  {product.button}
-                </button>
+                <Link to={`/product/${product.id}`}>
+                  <button className="bg-[#D87D4A] px-4 py-2 text-white">
+                    {" "}
+                    SEE PRODUCT
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
