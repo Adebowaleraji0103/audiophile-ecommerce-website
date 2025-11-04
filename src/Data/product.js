@@ -1,5 +1,5 @@
 const products = [
-    // --------- Headphones ----------
+  // --------- Headphones ----------
   {
     imageMobile: "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
     imageTablet: "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
@@ -70,7 +70,7 @@ const products = [
     ],
     button: "SEE PRODUCT",
   },
-//   -------- Speaker ------------
+  //   -------- Speaker ------------
 
   {
     imageMobile: "/assets/shared/mobile/image-zx9-speaker.jpg",
@@ -121,7 +121,7 @@ const products = [
     ],
     button: "SEE PRODUCT",
   },
-// ------------ Earohone ---------------
+  // ------------ Earohone ---------------
   {
     imageMobile: "/assets/product-yx1-earphones/mobile/image-product.jpg",
     imageTablet: "/assets/product-yx1-earphones/tablet/image-product.jpg",
@@ -130,6 +130,20 @@ const products = [
     name: "YX1 WIRELESS EARPHONES",
     description:
       "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setupsTailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
+    id: "yx1-wireless-earphone",
+    price: 599,
+    features:
+      "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound..",
+    features2:
+      "The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black.",
+
+    includes: [
+      { quantity: 2, item: "Earphone Unit" },
+      { quantity: 6, item: "Multi-size Earplugs" },
+      { quantity: 1, item: "User Manual" },
+      { quantity: 1, item: "USB-C Charging Cable" },
+      { quantity: 1, item: "Travel Pouch" },
+    ],
     button: "SEE PRODUCT",
   },
 ];
