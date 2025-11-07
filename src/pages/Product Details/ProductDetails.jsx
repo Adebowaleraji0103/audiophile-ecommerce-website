@@ -3,11 +3,13 @@ import products from "../../Data/product";
 import { useState } from "react";
 import AudioGear from "../Homepage/AudioGear";
 import HeadphoneShop from "../Homepage/HeadphoneShop";
+import { useCart } from "../../Context/CartContext"; // 👈 import your cart hook
 
-const Product = () => {
+const ProductDetails = () => {
   const { id } = useParams();
-  const product = products.find((p) => p.id === id);
+  const product = products.find((p) => p.id.toString() === id); // 👈 make sure types match
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart(); // 👈 get addToCart from context
 
   if (!product) {
     return (
@@ -19,6 +21,12 @@ const Product = () => {
 
   const increaseQty = () => setQuantity((q) => q + 1);
   const decreaseQty = () => setQuantity((q) => (q > 1 ? q - 1 : 1));
+
+  const handleAddToCart = () => {
+    // 👇 include quantity when adding
+    addToCart({ ...product, quantity });
+    alert(`${product.name} added to cart (${quantity}) 🛒`);
+  };
 
   return (
     <div>
@@ -68,7 +76,10 @@ const Product = () => {
                   +
                 </button>
               </div>
-              <button className="bg-[#D87D4A] text-white px-6 py-3 uppercase tracking-wider rounded-md hover:bg-[#FBAF85] transition">
+              <button
+                onClick={handleAddToCart}
+                className="bg-[#D87D4A] text-white px-6 py-3 uppercase tracking-wider rounded-md hover:bg-[#FBAF85] transition"
+              >
                 Add to Cart
               </button>
             </div>
@@ -104,10 +115,12 @@ const Product = () => {
           </div>
         </div>
       </div>
+
+      {/* Bottom sections */}
       <HeadphoneShop />
       <AudioGear />
     </div>
   );
 };
 
-export default Product;
+export default ProductDetails;
